@@ -23,7 +23,6 @@ with tab3:
         st.subheader(f"Результат:{score} из 1")
         if score == 1:
             st.success("Правильно ответил")
-            fireworks(duration=5)
             st.progress(1/3)
         else:
             st.progress(0/3)
@@ -41,7 +40,6 @@ with tab3:
         st.subheader(f"Результат:{score} из 2")
         if score == 2:
             st.success("Правильно ответил")
-            fireworks(duration=5)
             st.progress(2/3)
         else:
             st.progress(1/3)
@@ -65,5 +63,8 @@ with tab3:
         else:
             st.progress(2/3)
             st.error("Не правильно")
+
+
+    
 
 
